@@ -18,6 +18,12 @@ const routes = [
     alias: ['/autenticacion', '/usuario'],
     component: () => import(/* webpackChunkName: "Login" */ '../views/Login.vue')
   },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    alias: ['/calendario', '/agenda'],
+    component: () => import(/* webpackChunkName: "Calendar" */ '../views/Calendar.vue')
+  },
 ]
 
 const router = new VueRouter({

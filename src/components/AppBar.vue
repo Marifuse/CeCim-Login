@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       app
-      color="grey darken-3"
+      color="#3F51B5"
       dark
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
@@ -10,8 +10,8 @@
     </v-app-bar>
 
     <v-navigation-drawer
+      app
       v-model="drawer"
-      absolute
       temporary
     >
       <v-list
@@ -28,6 +28,16 @@
             >
               <span class="mr-1">{{ !!currentUser ? 'Cerrar Sesión' : 'Iniciar Sesión' }}</span>
               <v-icon>mdi-lock</v-icon>
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              text
+              to="/calendar"
+            >
+              <span class="mr-1">Calendario</span>
+              <v-icon>mdi-calendar-check</v-icon>
             </v-btn>
           </v-list-item>
 
@@ -75,7 +85,7 @@ export default {
   transition: .3s;
 }
 .nav__a:hover {
-  color: rgb(185, 185, 185) !important;
+  color: rgb(179, 177, 255) !important;
 }
 
 </style>
