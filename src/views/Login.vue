@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login__container">
     <LoginForm/>
   </div>
 </template>
@@ -13,6 +13,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.login__container {
+  height: 100%;
+  background-color: rgb(145, 145, 252);
+}
 </style>

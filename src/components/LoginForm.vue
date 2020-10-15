@@ -2,9 +2,10 @@
   <div>
     <v-card width='400px' class="mx-auto my-auto lighten-5 pa-5 mt-16">
       <v-card-title class="pb-0">
-       <v-img class="mx-auto" width=5em src="https://firebasestorage.googleapis.com/v0/b/cecim-a812a.appspot.com/o/logo-cecim.png?alt=media&token=a49e0d9b-ee8d-4737-b93a-3eebc8ac09cd"></v-img>
+       <v-img class="mx-auto" src="https://firebasestorage.googleapis.com/v0/b/cecim-a812a.appspot.com/o/logo-cecim.png?alt=media&token=a49e0d9b-ee8d-4737-b93a-3eebc8ac09cd"></v-img>
       </v-card-title>
       <v-card-text>
+       <h1 class="text-center pa-5">Login</h1>
         <v-form>
           <v-text-field label='Usuario' 
           prepend-icon='mdi-account-circle'

@@ -16,13 +16,16 @@ const routes = [
     path: '/login',
     name: 'Login',
     alias: ['/autenticacion', '/usuario'],
-    component: () => import(/* webpackChunkName: "Login" */ '../views/Login.vue')
+    component: () => import(/* webpackChunkName: "Login" */ '../views/Login.vue'),
   },
   {
     path: '/calendar',
     name: 'Calendar',
+    component: () => import(/* webpackChunkName: "Calendar" */ '../views/Calendar.vue'),
     alias: ['/calendario', '/agenda'],
-    component: () => import(/* webpackChunkName: "Calendar" */ '../views/Calendar.vue')
+    meta: {
+      requireLogin: true // El meta tiene relación con la función guardia (se representa con una respuesta booleana)
+    }
   },
 ]
 
