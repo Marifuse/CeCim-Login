@@ -47,7 +47,7 @@
               to="/patient"
             >
               <span class="mr-1">Lista de Pacientes</span>
-              <v-icon>mdi-calendar-check</v-icon>
+              <v-icon>mdi-account-multiple</v-icon>
             </v-btn>
           </v-list-item>
 
