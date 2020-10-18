@@ -44,6 +44,16 @@
           <v-list-item>
             <v-btn
               text
+              to="/patient"
+            >
+              <span class="mr-1">Lista de Pacientes</span>
+              <v-icon>mdi-calendar-check</v-icon>
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              text
               to="/home"
             >
               <span class="mr-1">Home</span>

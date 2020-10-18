@@ -27,6 +27,15 @@ const routes = [
       requireLogin: true // El meta tiene relación con la función guardia (se representa con una respuesta booleana)
     }
   },
+  {
+    path: '/patient',
+    name: 'Patient',
+    component: () => import(/* webpackChunkName: "Patient" */ '../views/Patient.vue'),
+    alias: ['/paciente', '/listapacientes'],
+    meta: {
+      requireLogin: true // El meta tiene relación con la función guardia (se representa con una respuesta booleana)
+    }
+  },
 ]
 
 const router = new VueRouter({
