@@ -4,7 +4,7 @@
 			<h1 class="text-center mt-5" style="color: #FFF;">Calendario de Horas Médicas</h1>
 			<!-- Calendario -->
 			<v-row justify="center" class="mx-auto">
-				<v-date-picker v-model="date" v-bind:max="today" 
+				<v-date-picker v-model="date" 
 				color="blue darken-3" full-width :landscape="$vuetify.breakpoint.smAndUp" 
 				class="mt-10 mb-5" @click:date="getInfo"></v-date-picker>
 			</v-row>
@@ -29,6 +29,7 @@
 <script>
 export default {
 	data: () => ({
+    picker: new Date().toISOString().substr(0, 10),
 		today: '2020-10-14',
 		events: [
 			{
@@ -48,9 +49,6 @@ export default {
 			},
 		],
 	}),
-	mounted () {
-		this.$refs.calendar.scrollToTime('08:00')
-	},
 }
 </script>
 

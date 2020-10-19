@@ -1,0 +1,4 @@
+Datos para ingresar a la Aplicación
+
+usuario: maria.fuenzalida.serrano@gmail.com
+pass: cecim2020.
