@@ -46,14 +46,12 @@ export default new Vuex.Store({
         commit('SET_PATIENTS', response.data)
       })
     },
-    
     postPatient({dispatch, state}) {
       axios.post(`${baseUrl}/patient`, state.currentPatient.data)
       .then(() => {
         dispatch('setPatients')
       })
     },
-    
     updateName({commit}, name) {
       commit('UPDATE_NAME', name)
     },
@@ -67,13 +65,10 @@ export default new Vuex.Store({
       })
     },
     setCurrentPatient({commit, getters}, id) {
-      
       let targetPatient = getters.searchPatientById(id)
       if (targetPatient) {
-        
         commit('SET_CURRENT_PATIENT', targetPatient)
       } else {
-        
         axios.get(`${baseUrl}/patient/${id}`)
         .then((response) => {
           commit('SET_CURRENT_PATIENT', response.data)

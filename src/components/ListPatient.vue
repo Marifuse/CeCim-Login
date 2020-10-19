@@ -15,8 +15,8 @@
             <td>{{ patient.data.name }}</td>
             <td>{{ patient.data.email }}</td>
             <td>
-              <v-btn color="pink darken-1" fab small dark @click="editPatient(patient.id)"><v-icon>mdi-pencil</v-icon></v-btn>
-              <v-btn class= 'mx-2' color="purple darken-4" fab small dark @click="removePatient(patient.id)"><v-icon>mdi-delete</v-icon></v-btn>
+              <v-btn color="blue darken-1" fab small dark @click="editPatient(patient.id)"><v-icon>mdi-pencil</v-icon></v-btn>
+              <v-btn class= 'mx-2' color="red darken-4" fab small dark @click="removePatient(patient.id)"><v-icon>mdi-delete</v-icon></v-btn>
             </td>
           </tr>
         </tbody>
